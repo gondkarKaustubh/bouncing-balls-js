@@ -41,8 +41,9 @@ function random(max , min ){
     return num 
 }
 const balls = [] ;
-let size  = random(70 , 20)
+
 while(balls.length < 25){
+    let size  = random(70 , 20)
     const ball = new Ball(random(width - size , size) , random(height - size , size) ,random(50 ,-50) , random(50 ,-50) ,size, `rgb(${random(255 , 0 )} ,${random(255 , 0 )} , ${random(255 , 0 )})`)
     balls.push(ball)
 }
